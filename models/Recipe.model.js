@@ -37,7 +37,8 @@ const recipeSchema = new Schema(
             min: 0,
         },
         creator: {
-            type: String,
+            type: Schema.Types.ObjectId,
+            ref: 'User',
         },
         created: {
             type: Date,
